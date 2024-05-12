@@ -2,9 +2,9 @@ import requests
 import pytest
 
 URL = 'https://api.pokemonbattle.me/v2'
-TOKEN = 'c718c6a9ed2fae22077ad1395828cb1a'
+TOKEN = 'токен_из_бота_котика'
 HEADER = {'Content-Type':'application/json', 'trainer_token':TOKEN}
-TRAINER_ID = '4051'
+TRAINER_ID = 'Тренер'
 
 def test_status_code():
     response = requests.get(url = f'{URL}/pokemons',params = {'trainer_id' : TRAINER_ID})
